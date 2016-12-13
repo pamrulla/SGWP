@@ -1,0 +1,34 @@
+/*
+ Theme Name:   SmartGnan - Sydney Child Theme
+ Theme URI:    http://www.sweetymagicalworks.com/
+ Description:  A Sydney child theme
+ Author:       Patan Amrulla Khan
+ Author URI:   http://www.sweetymagicalworks.com
+ Template:     sydney
+ Version:      1.0.0
+*/
+
+@import url("../sydney/style.css");
+
+.comment-body {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #4984f3;
+    background-color: #ffffff;
+}
+
+.comments-area .children {
+    padding-left: 50px;
+    border-bottom: 1px solid #f3b89e;
+}
+
+/*.widget-area .widget {
+    border: solid 1px black;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.widget-area .widget_search {
+    border: none;
+}*/
