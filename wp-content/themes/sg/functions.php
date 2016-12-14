@@ -6,6 +6,22 @@
  */
 
 /**
+ * Display LifterLMS Course and Lesson sidebars
+ * on courses and lessons in place of the sidebar returned by
+ * this function
+ * @param    string     $id    default sidebar id (an empty string)
+ * @return   string
+ */
+function my_llms_sidebar_function( $id ) {
+	
+	$my_sidebar_id = 'sidebar-1'; // replace this with your theme's sidebar ID
+
+	return $my_sidebar_id;
+
+}
+add_filter( 'llms_get_theme_default_sidebar', 'my_llms_sidebar_function' );
+
+/**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
