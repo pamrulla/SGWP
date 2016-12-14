@@ -5,7 +5,6 @@
  * @package sg
  */
 
-
 /**
  * Register widget area.
  *
@@ -40,6 +39,7 @@ function sg_widgets_init() {
 	if ( function_exists('siteorigin_panels_activate') ) {
 		register_widget( 'SG_Widget_Recent_Courses' );
         register_widget( 'SG_Services_Type_A' );
+        register_widget( 'Sg_Portfolio' );
 	}
 
 }
@@ -51,5 +51,6 @@ add_action( 'widgets_init', 'sg_widgets_init' );
 if ( function_exists('siteorigin_panels_activate') ) {
 	require get_stylesheet_directory() . "/widgets/widget-recent-courses.php";
     require get_stylesheet_directory() . "/widgets/fp-services-type-a.php";
+    require get_stylesheet_directory() . "/widgets/fp-portfolio.php";
 }
 

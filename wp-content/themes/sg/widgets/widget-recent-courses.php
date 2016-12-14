@@ -63,7 +63,7 @@ class SG_Widget_Recent_Courses extends WP_Widget {
 			'no_found_rows'       => true,
 			'post_status'         => 'publish',
 			'ignore_sticky_posts' => true,
-            'post_type' => 'projects',
+            'post_type' => 'course',
 		) ) );
 
 		if ($r->have_posts()) :

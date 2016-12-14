@@ -1,0 +1,36 @@
+12-13-2016 @ 12:05:26 - LLMS update tasks started for version 3.0.0
+12-13-2016 @ 12:05:26 - function `create_access_plans()` scheduled with arguments: []
+12-13-2016 @ 12:05:26 - function `del_deprecated_options()` scheduled with arguments: []
+12-13-2016 @ 12:05:27 - function `migrate_account_field_options()` scheduled with arguments: []
+12-13-2016 @ 12:05:28 - function `migrate_course_postmeta()` scheduled with arguments: []
+12-13-2016 @ 12:05:28 - function `migrate_coupon_data()` scheduled with arguments: []
+12-13-2016 @ 12:05:29 - function `migrate_email_postmeta()` scheduled with arguments: []
+12-13-2016 @ 12:05:29 - function `migrate_lesson_postmeta()` scheduled with arguments: []
+12-13-2016 @ 12:05:29 - function `update_orders()` scheduled with arguments: []
+12-13-2016 @ 12:05:30 - LLMS update tasks enqueued for version 3.0.0
+12-13-2016 @ 12:05:30 - LLMS update tasks started for version 3.0.3
+12-13-2016 @ 12:05:30 - function `rename_students_role()` scheduled with arguments: []
+12-13-2016 @ 12:05:30 - LLMS update tasks enqueued for version 3.0.3
+12-13-2016 @ 12:05:31 - Progress: 0 completed, 8 remaining
+12-13-2016 @ 12:05:31 - Progress: 0 completed, 1 remaining
+12-13-2016 @ 12:05:31 - function `create_access_plans()` started
+12-13-2016 @ 12:05:31 - LLMS_Update_300::create_access_plans() is complete
+12-13-2016 @ 12:05:32 - function `del_deprecated_options` started
+12-13-2016 @ 12:05:32 - LLMS_Update_300::del_deprecated_options() is complete
+12-13-2016 @ 12:05:32 - Progress: 1 completed, 7 remaining
+12-13-2016 @ 12:05:32 - Progress: 0 completed, 1 remaining
+12-13-2016 @ 12:05:33 - function `migrate_account_field_options` started
+12-13-2016 @ 12:05:33 - LLMS_Update_300::migrate_account_field_options() is complete
+12-13-2016 @ 12:05:33 - function `migrate_course_postmeta` started
+12-13-2016 @ 12:05:34 - LLMS_Update_300::migrate_course_postmeta() is complete
+12-13-2016 @ 12:05:34 - function `migrate_coupon_data` started
+12-13-2016 @ 12:05:34 - LLMS_Update_300::migrate_coupon_data() is complete
+12-13-2016 @ 12:05:35 - function `migrate_email_postmeta` started
+12-13-2016 @ 12:05:35 - LLMS_Update_300::migrate_email_postmeta() is complete
+12-13-2016 @ 12:05:36 - function `migrate_lesson_postmeta` started
+12-13-2016 @ 12:05:36 - LLMS_Update_300::migrate_lesson_postmeta() is complete
+12-13-2016 @ 12:05:36 - LLMS_Update_300::update_orders() is complete
+12-13-2016 @ 12:05:37 - function `rename_students_role()` started
+12-13-2016 @ 12:05:37 - LLMS_Update_303::rename_students_role() is complete
+12-13-2016 @ 12:05:46 - LLMS update tasks completed for version 3.0.0
+12-13-2016 @ 12:05:46 - LLMS update tasks completed for version 3.0.3

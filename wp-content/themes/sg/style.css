@@ -22,6 +22,35 @@
     border-bottom: 1px solid #f3b89e;
 }
 
+.roll-project.fullwidth .project-item {
+    width: 20%;
+    margin: 0;
+    /*border: solid 1px red;*/
+    border-radius: 10px;
+    height: 160px;
+}
+
+.roll-project .project-title {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.roll-project .project-wrap{
+    background-color: #00a0d2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.roll-project .project-content {
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0a6550;
+}
+
 /*.widget-area .widget {
     border: solid 1px black;
     position: relative;
