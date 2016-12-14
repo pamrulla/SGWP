@@ -333,6 +333,48 @@ if ( ! function_exists( 'lifterlms_template_single_meta_wrapper_end' ) ) {
 }
 
 /**
+ * Open the course syllabus information wrapper
+ * @since   3.0.0
+ * @version 3.0.0
+ */
+if ( ! function_exists( 'lifterlms_template_col_md_8_start' ) ) {
+    function lifterlms_template_col_md_8_start() {
+        llms_get_template( 'course/col_md_8_start.php' );
+    }
+}
+/**
+ * Close the course syllabus information wrapper
+ * @since   3.0.0
+ * @version 3.0.0
+ */
+if ( ! function_exists( 'lifterlms_template_col_md_8_end' ) ) {
+    function lifterlms_template_col_md_8_end() {
+        llms_get_template( 'course/col_md_8_end.php' );
+    }
+}
+
+/**
+ * Open the course syllabus information wrapper
+ * @since   3.0.0
+ * @version 3.0.0
+ */
+if ( ! function_exists( 'lifterlms_template_col_md_4_start' ) ) {
+    function lifterlms_template_col_md_4_start() {
+        llms_get_template( 'course/col_md_4_start.php' );
+    }
+}
+/**
+ * Close the course syllabus information wrapper
+ * @since   3.0.0
+ * @version 3.0.0
+ */
+if ( ! function_exists( 'lifterlms_template_col_md_4_end' ) ) {
+    function lifterlms_template_col_md_4_end() {
+        llms_get_template( 'course/col_md_4_end.php' );
+    }
+}
+
+/**
  * Course Estimated Length Template
  * replaced 'lifterlms_template_single_lesson_length()' which was misnamed as being related to a lesson
  * when it was actually related to a course
