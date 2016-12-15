@@ -28,30 +28,11 @@ $sections = $course->get_sections( 'posts' );
 
 	<?php else : ?>
 
-		<?php foreach ( $sections as $s ) : $section = new LLMS_Section( $s->ID ); ?>
-
-			<?php if ( apply_filters( 'llms_display_outline_section_titles', true ) ) : ?>
-				<h3 class="llms-h3 llms-section-title"><?php echo get_the_title( $s->ID ); ?></h3>
-			<?php endif; ?>
-
-			<?php if ( $lessons = $section->get_children_lessons() ) : ?>
-
-				<?php foreach ( $lessons as $l ) : ?>
-
-					<?php llms_get_template( 'course/lesson-preview.php', array(
-						'lesson' => new LLMS_Lesson( $l->ID ),
-						'total_lessons' => count( $lessons ),
-					) ); ?>
-
-				<?php endforeach; ?>
-
-			<?php else : ?>
-
-				<?php _e( 'This section does not have any lessons.', 'lifterlms' ); ?>
-
-			<?php endif; ?>
-
-		<?php endforeach; ?>
+		<?php 
+			$collapse = 1;
+			$toggles = 1;
+			echo do_shortcode( '[lifterlms_course_outline collapse="' . $collapse . '" toggles="' . $toggles . '"]' ); 
+		?>
 
 	<?php endif; ?>
 

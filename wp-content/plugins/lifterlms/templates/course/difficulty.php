@@ -17,5 +17,10 @@ if ( ! $course->get_difficulty() ) {
 ?>
 
 <div class="llms-meta llms-difficulty">
-	<p><?php printf( __( 'Difficulty: <span class="difficulty">%s</span>', 'lifterlms' ), $course->get_difficulty() ); ?></p>
+	<div class="col-sm-6">
+		<span>Difficulty</span>
+	</div>
+	<div class="col-sm-6">
+		<?php printf( __( '<span class="difficulty">%s</span>', 'lifterlms' ), $course->get_difficulty() ); ?>
+	</div>
 </div>

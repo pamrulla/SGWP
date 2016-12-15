@@ -11,5 +11,10 @@ global $post;
 ?>
 
 <div class="llms-meta llms-categories">
-	<p><?php echo get_the_term_list( $post->ID, 'course_cat', __( 'Categories: ', 'lifterlms' ), ', ', '' ); ?></p>
+	<div class="col-sm-6">
+		<span>Categories</span>
+	</div>
+	<div class="col-sm-6">
+		<?php echo get_the_term_list( $post->ID, 'course_cat', '', ', ', '' ); ?>
+	</div>
 </div>

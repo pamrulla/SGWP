@@ -9,5 +9,4 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
 
-<div class="row1">
-    <div class="col-sm-12 col-md-4">
+<div class="col-sm-12 col-md-4">

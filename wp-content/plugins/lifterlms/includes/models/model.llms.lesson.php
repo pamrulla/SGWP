@@ -248,13 +248,13 @@ class LLMS_Lesson extends LLMS_Post_Model {
 
 		} else {
 
-			$r = wp_oembed_get( $this->get( 'video_embed' ) );
+			$r = $this->get( 'video_embed' ); /*wp_oembed_get( $this->get( 'video_embed' ) );
 
 			if ( ! $r ) {
 
 				$r = do_shortcode( '[video src="' . $this->get( 'video_embed' ) . '"]' );
 
-			}
+			}*/
 
 			return $r;
 

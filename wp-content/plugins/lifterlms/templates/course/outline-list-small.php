@@ -4,17 +4,31 @@
  */
 ?>
 <div class="llms-widget-syllabus<?php echo ( $collapse ) ? ' llms-widget-syllabus--collapsible' : ''; ?>">
-
+<h3>Sysllabus</h3>
 	<?php do_action( 'lifterlms_outline_before' ); ?>
 
 	<ul class="llms-course-outline">
+		<?php if ( $collapse && $toggles ) : ?>
 
+			<li class="llms-section llms-syllabus-footer">
+
+				<?php do_action( 'lifterlms_outline_before_footer' ); ?>
+
+				<a class="roll-button roll-small-button border llms-button-text llms-collapse-toggle" data-action="open" href="#"><?php _e( 'Open All', 'lifterlms' ); ?></a>
+				
+				<a class="roll-button roll-small-button border llms-button-text llms-collapse-toggle" data-action="close" href="#"><?php _e( 'Close All', 'lifterlms' ); ?></a>
+
+				<?php do_action( 'lifterlms_outline_after_footer' ); ?>
+
+			</li>
+
+		<?php endif; ?>
 		<?php //get section data
 		foreach ( $sections as $section ) : ?>
 
-			<li class="llms-section<?php echo ( $collapse ) ? ( $current_section && $section['id'] == $current_section ) ? ' llms-section--opened' : ' llms-section--closed' : ''; ?>">
+			<li class="panel panel-default llms-section<?php echo ( $collapse ) ? ( $current_section && $section['id'] == $current_section ) ? ' llms-section--opened' : ' llms-section--closed' : ''; ?>">
 
-				<div class="section-header">
+				<div class="panel-heading section-header">
 
 					<?php do_action( 'lifterlms_outline_before_header' ); ?>
 
@@ -40,7 +54,7 @@
 
 					if ( $lesson['parent_id'] == $section['id'] ) : ?>
 
-						<ul class="llms-lesson">
+						<ul class="panel-body llms-lesson">
 
 							<li>
 
@@ -58,7 +72,7 @@
 
 									<?php if ( $l->is_free() || llms_is_user_enrolled( get_current_user_id(), $course->id ) ) : ?>
 
-										<a href="<?php echo get_permalink( $lesson['id'] ); ?>"><?php echo $lesson['title']; ?></a>
+										<a href="<?php echo get_permalink( $lesson['id'] ); ?>" target="_blank"><?php echo $lesson['title']; ?></a>
 
 									<?php else :
 
@@ -81,22 +95,6 @@
 			</li>
 
 		<?php endforeach; ?>
-
-		<?php if ( $collapse && $toggles ) : ?>
-
-			<li class="llms-section llms-syllabus-footer">
-
-				<?php do_action( 'lifterlms_outline_before_footer' ); ?>
-
-				<a class="llms-button-text llms-collapse-toggle" data-action="open" href="#"><?php _e( 'Open All', 'lifterlms' ); ?></a>
-				<span>&middot;</span>
-				<a class="llms-button-text llms-collapse-toggle" data-action="close" href="#"><?php _e( 'Close All', 'lifterlms' ); ?></a>
-
-				<?php do_action( 'lifterlms_outline_after_footer' ); ?>
-
-			</li>
-
-		<?php endif; ?>
 
 	</ul>
 

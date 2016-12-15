@@ -30,15 +30,15 @@ add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_syllabus',           25 );
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_8_end', 30);
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_4_start', 35);
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_meta_wrapper_start', 40 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_length',             45 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_difficulty',         50 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_tracks',      55 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_categories',  60 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_tags',        65 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_course_author',             70 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_meta_wrapper_end',   75 );
-add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_prerequisites',      80 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_prerequisites',      40 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_meta_wrapper_start', 45 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_length',             50 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_difficulty',         55 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_tracks',      60 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_categories',  65 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_course_tags',        70 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_course_author',             75 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_meta_wrapper_end',   80 );
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_4_end', 85);
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_reviews',            100 );
 
