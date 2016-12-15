@@ -4,7 +4,7 @@
  */
 ?>
 <div class="llms-widget-syllabus<?php echo ( $collapse ) ? ' llms-widget-syllabus--collapsible' : ''; ?>">
-<h3>Sysllabus</h3>
+<h3>Syllabus</h3>
 	<?php do_action( 'lifterlms_outline_before' ); ?>
 
 	<ul class="llms-course-outline">
@@ -72,7 +72,7 @@
 
 									<?php if ( $l->is_free() || llms_is_user_enrolled( get_current_user_id(), $course->id ) ) : ?>
 
-										<a href="<?php echo get_permalink( $lesson['id'] ); ?>" target="_blank"><?php echo $lesson['title']; ?></a>
+										<a href="<?php echo get_permalink( $lesson['id'] ); ?>"><?php echo $lesson['title']; ?></a>
 
 									<?php else :
 

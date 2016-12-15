@@ -536,6 +536,38 @@ if ( ! function_exists( 'lifterlms_template_single_parent_course' ) ) {
 }
 
 /**
+ * Parent Course Link Template Include
+ * @return void
+ */
+if ( ! function_exists( 'lifterlms_template_single_lesson_content_wrapper_start' ) ) {
+
+    function lifterlms_template_single_lesson_content_wrapper_start() {
+
+        llms_get_template( 'lesson/single_lesson_content_wrapper_start.php' );
+    }
+}
+
+/**
+ * Parent Course Link Template Include
+ * @return void
+ */
+if ( ! function_exists( 'lifterlms_template_single_lesson_content_wrapper_middle' ) ) {
+
+    function lifterlms_template_single_lesson_content_wrapper_middle() {
+
+        llms_get_template( 'lesson/single_lesson_content_wrapper_middle.php' );
+    }
+}
+
+if ( ! function_exists( 'lifterlms_template_single_lesson_content_wrapper_end' ) ) {
+
+    function lifterlms_template_single_lesson_content_wrapper_end() {
+
+        llms_get_template( 'lesson/single_lesson_content_wrapper_end.php' );
+    }
+}
+
+/**
  * Complete Lesson Link Template Include
  * @return void
  */

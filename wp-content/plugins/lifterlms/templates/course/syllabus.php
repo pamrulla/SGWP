@@ -12,7 +12,16 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 global $post;
 
-$course = new LLMS_Course( $post );
+$course = null;
+$parent_course = null;
+
+if( $post->post_type == 'lesson'){
+    $parent_course = get_post_meta( $post->ID, '_parent_course', true );
+    $course = new LLMS_Course($parent_course);
+}
+else {
+    $course = new LLMS_Course($post);
+}
 
 // retrieve sections to use in the template
 $sections = $course->get_sections( 'posts' );
@@ -24,7 +33,8 @@ $sections = $course->get_sections( 'posts' );
 
 	<?php if ( ! $sections ) : ?>
 
-		<?php _e( 'This course does not have any sections.', 'lifterlms' ); ?>
+		<?php _e( 'This course does not have any sections.', 'lifterlms' );
+		print_r($post);?>
 
 	<?php else : ?>
 

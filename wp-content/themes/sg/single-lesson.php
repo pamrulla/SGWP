@@ -18,12 +18,6 @@ get_header(); ?>
 
 					<header class="entry-header">
 						<?php the_title( '<h1 class="title-post">', '</h1>' ); ?>
-
-						<?php if (get_theme_mod('hide_meta_single') != 1 ) : ?>
-						<div class="meta-post">
-							<?php sydney_posted_on(); ?>
-						</div><!-- .entry-meta -->
-						<?php endif; ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -38,5 +32,25 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+
+        player.on('loaded', function () {
+
+        });
+
+        player.on('ended', function() {
+            console.log('Ended');
+            document.getElementById("mark_complete_form").click();
+            /*$( "#mark_complete_form" ).submit(function( event ) {
+                alert( "Handler for .submit() called." );
+                event.preventDefault();
+            });*/
+        });
+
+    </script>
 
 <?php get_footer(); ?>

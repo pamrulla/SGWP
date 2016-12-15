@@ -36,7 +36,7 @@ if ( is_user_logged_in() && llms_is_user_enrolled( get_current_user_id(), $lesso
 
 		 	<input type="hidden" name="mark-complete" value="<?php echo esc_attr( $post->ID ); ?>" />
 
-		 	<input type="submit" class="llms-button-primary button" name="mark_complete" value="<?php echo $lesson->single_mark_complete_text(); ?>" />
+		 	<input type="submit" id="mark_complete_form" class="llms-button-primary button" name="mark_complete" value="<?php echo $lesson->single_mark_complete_text(); ?>" />
 		 	<input type="hidden" name="action" value="mark_complete" />
 
 		 	<?php wp_nonce_field( 'mark_complete' ); ?>
