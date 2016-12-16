@@ -10,13 +10,13 @@ $certificates = $s->get_certificates();
 ?>
 
 <div class="llms-sd-section llms-my-certificates">
-	<h3 class="llms-sd-section-title"><?php echo apply_filters( 'lifterlms_my_certificates_title', __( 'My Certificates', 'lifterlms' ) ); ?></h3>
+	<h5 class="llms-sd-section-title"><?php echo apply_filters( 'lifterlms_my_certificates_title', __( 'My Certificates', 'lifterlms' ) ); ?></h5>
 	<?php if ( $certificates ) : ?>
 		<ul class="listing-certificates">
 		<?php foreach ( $certificates as $c ) : ?>
 			<li class="certificate-item">
 				<div>
-					<h4><?php echo get_the_title( $c->certificate_id ); ?></h4>
+					<h6><?php echo get_the_title( $c->certificate_id ); ?></h6>
 				</div>
 
 				<div>

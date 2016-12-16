@@ -21,17 +21,25 @@ llms_print_notices();
 
 	<?php do_action( 'lifterlms_after_student_dashboard_greeting' ); ?>
 
-	<?php llms_get_template( 'myaccount/my-courses.php', array(
-		'courses' => $courses,
-		'student' => $student,
-	) ); ?>
-
-	<?php llms_get_template( 'myaccount/my-certificates.php' ); ?>
-
-	<?php llms_get_template( 'myaccount/my-achievements.php' ); ?>
-
-	<?php llms_get_template( 'myaccount/my-memberships.php' ); ?>
-
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<?php llms_get_template( 'myaccount/my-courses.php', array(
+				'courses' => $courses,
+				'student' => $student,
+			) ); ?>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<?php llms_get_template( 'myaccount/my-certificates.php' ); ?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<?php llms_get_template( 'myaccount/my-achievements.php' ); ?>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<?php llms_get_template( 'myaccount/my-memberships.php' ); ?>
+		</div>
+	</div>
 	<?php do_action( 'lifterlms_after_student_dashboard_tab' ); ?>
 
 </div>

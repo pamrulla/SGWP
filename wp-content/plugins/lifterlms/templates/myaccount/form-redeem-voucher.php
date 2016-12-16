@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php do_action( 'lifterlms_before_redeem_voucher' ); ?>
 
+<div class="llms_redeem_voucher text-center">
 <form method="POST">
 
 	<p class="form-row form-row-first">
@@ -24,5 +25,5 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<?php wp_nonce_field( 'lifterlms_voucher_check', 'lifterlms_voucher_nonce' ); ?>
 
 </form>
-
+</div>
 <?php do_action( 'lifterlms_after_redeem_voucher' ); ?>

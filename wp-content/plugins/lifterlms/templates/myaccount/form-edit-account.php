@@ -24,28 +24,31 @@ if ( 'yes' === get_option( 'lifterlms_registration_add_phone' ) ) {
 
 <form action="" class="llms-person-information-form" method="post">
 
+<div class="row">
+<div class="col-sm-12 col-md-6">
 	<div class="llms-basic-information">
 
-		<h3><?php _e( 'Basic Information', 'lifterlms' ) ?></h3>
+		<h5><?php _e( 'Basic Information', 'lifterlms' ) ?></h5>
 
 		<p class="form-row form-row-first">
-			<label for="account_first_name"><?php _e( 'First name', 'lifterlms' ); ?></label>
+			<label for="account_first_name"><?php _e( 'First name*', 'lifterlms' ); ?></label>
 			<input type="text" class="input-text llms-input-text" name="account_first_name" id="account_first_name" value="<?php echo esc_attr( $user->first_name ); ?>" />
 		</p>
 		<p class="form-row form-row-last">
-			<label for="account_last_name"><?php _e( 'Last name', 'lifterlms' ); ?></label>
+			<label for="account_last_name"><?php _e( 'Last name*', 'lifterlms' ); ?></label>
 			<input type="text" class="input-text llms-input-text" name="account_last_name" id="account_last_name" value="<?php echo esc_attr( $user->last_name ); ?>" />
 		</p>
 		<p class="form-row form-row-wide">
 			<label for="account_email"><?php _e( 'Email address', 'lifterlms' ); ?></label>
-			<input type="email" class="input-text llms-input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" />
+			<input type="email" class="input-text llms-input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" readonly/>
 		</p>
 
-		</div>
+	</div>
+</div>
+<div class="col-sm-12 col-md-6">
+	<div class="llms-change-password">
 
-		<div class="llms-change-password">
-
-		<h3><?php _e( 'Change Password', 'lifterlms' ) ?></h3>
+		<h5><?php _e( 'Change Password', 'lifterlms' ) ?></h5>
 
 		<p class="form-row form-row-first">
 			<label for="password_1"><?php _e( 'Password (leave blank to leave unchanged)', 'lifterlms' ); ?></label>
@@ -57,13 +60,14 @@ if ( 'yes' === get_option( 'lifterlms_registration_add_phone' ) ) {
 		</p>
 
 	</div>
-
+</div>
+</div>
 
 	<?php if ( 'yes' === get_option( 'lifterlms_registration_require_address' ) ) : ?>
 
 		<div class="llms-billing-information">
 
-			<h3><?php _e( 'Billing Information', 'lifterlms' ) ?></h3>
+			<h5><?php _e( 'Billing Information', 'lifterlms' ) ?></h5>
 			<p>
 				<label for="billing_address_1"><?php _e( 'Billing Address 1', 'lifterlms' ); ?> <span class="required">*</span></label>
 				<input type="text" class="input-text llms-input-text" name="billing_address_1" id="billing_address_1" value="<?php echo $billing_address_1; ?>" />
@@ -111,7 +115,7 @@ if ( 'yes' === get_option( 'lifterlms_registration_add_phone' ) ) {
 	<?php do_action( 'lifterlms_edit_account_form_end' ); ?>
 	<div class="clear"></div>
 
-	<p><input type="submit" class="button" name="save_account_details" value="<?php _e( 'Save changes', 'lifterlms' ); ?>" /></p>
+	<p class="text-right"><input type="submit" class="button" name="save_account_details" value="<?php _e( 'Save changes', 'lifterlms' ); ?>" /></p>
 
 	<?php wp_nonce_field( 'save_account_details' ); ?>
 	<input type="hidden" name="action" value="save_account_details" />
