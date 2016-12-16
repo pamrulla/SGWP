@@ -164,13 +164,15 @@
 }
 
 .llms-my-courses, .llms-my-achievements, .llms-my-certificates, .llms-my-memberships,
- .llms-person-information-form, .llms_redeem_voucher, .llms-my-orders {
+ .llms-person-information-form, .llms_redeem_voucher, .llms-my-orders, .llms-person-login-form-wrapper,
+.llms-new-person-form-wrapper, .lost_reset_password{
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .llms-my-courses ul.listing-courses, .llms-person-information-form, .llms_redeem_voucher,
-.llms-my-orders {
+.llms-my-orders, .llms-person-login-form-wrapper, .llms-new-person-form-wrapper,
+.lost_reset_password{
     padding: 10px;
 }
 
@@ -180,6 +182,19 @@
 
 td, th{
     border: none;
+}
+
+.llms-form-field.align-right {
+    text-align: left;
+}
+
+.llms-form-heading {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding: 10px;
+    background: #ff5043;
+    color: white
 }
 
 .llms-my-achievements ul.listing-achievements li.achievement-item{

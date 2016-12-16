@@ -46,7 +46,14 @@ $sep = apply_filters( 'lifterlms_my_account_navigation_link_separator', '&bull;'
 				        <i class="fa fa-history" aria-hidden="true"></i>
 				    </div>
 				</a>
-			<?php } ?>
+			<?php } else if($data['title'] == "Sign Out") { ?>
+                <a href="<?php echo isset( $data['url'] ) ? $data['url'] : llms_get_endpoint_url( $var, '', llms_get_page_url( 'myaccount' ) ); ?>" title="Example tile shortcut" class="tile-box tile-box-shortcut btn-danger">
+                    <div class="tile-header"><?php echo $data['title']; ?></div>
+                    <div class="tile-content-wrapper">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </a>
+            <?php } ?>
 		</div>
 	<?php endforeach; ?>
 </div>

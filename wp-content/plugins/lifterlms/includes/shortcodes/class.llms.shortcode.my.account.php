@@ -52,14 +52,22 @@ class LLMS_Shortcode_My_Account {
 
 				llms_print_notices();
 
-				llms_get_template( 'global/form-login.php' );
+				?>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <?php llms_get_template( 'global/form-login.php' ); ?>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <?php // can be enabled / disabled on options page.
+                            if ( get_option( 'lifterlms_enable_myaccount_registration' ) === 'yes' ) {
 
-				// can be enabled / disabled on options page.
-				if ( get_option( 'lifterlms_enable_myaccount_registration' ) === 'yes' ) {
+                                llms_get_template( 'global/form-registration.php' );
 
-					llms_get_template( 'global/form-registration.php' );
+                            } ?>
+                    </div>
+                </div>
+                <?php
 
-				}
 
 			}
 

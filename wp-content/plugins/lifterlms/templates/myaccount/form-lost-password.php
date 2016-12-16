@@ -4,11 +4,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php llms_print_notices(); ?>
 
-<form method="post" class="lost_reset_password">
+<form method="post" class="lost_reset_password col-md-6">
 
 	<?php if ( 'lost_password' == $args['form'] ) : ?>
-
-		<p><?php echo apply_filters( 'lifterlms_lost_password_message', __( 'Lost your password? Enter your email address and we will send you a link to reset it.', 'lifterlms' ) ); ?></p>
+        <h4 class="llms-form-heading"><?php _e( 'Lost Password', 'lifterlms' ); ?></h4>
+		<p class="text-center"><?php echo apply_filters( 'lifterlms_lost_password_message', __( 'Lost your password? Enter your email address and we will send you a link to reset it.', 'lifterlms' ) ); ?></p>
 
 		<p><label for="user_login"><?php _e( 'Username or email', 'lifterlms' ); ?></label> 
 		<input class="input-text llms-input-text" type="text" name="user_login" id="user_login" /></p>
