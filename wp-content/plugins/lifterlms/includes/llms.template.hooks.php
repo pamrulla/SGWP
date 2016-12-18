@@ -31,6 +31,7 @@ add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_8_end', 30);
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_col_md_4_start', 35);
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_prerequisites',      40 );
+add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_course_qna_link',      43 );
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_meta_wrapper_start', 45 );
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_length',             50 );
 add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_difficulty',         55 );
@@ -57,6 +58,7 @@ add_action( 'lifterlms_single_lesson_before_summary', 'lifterlms_template_single
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_complete_lesson_link',  30 );
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_lesson_navigation',     35 );
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_single_lesson_content_wrapper_middle', 40 );
+add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_course_qna_link',      43 );
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_single_syllabus',           45 );
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_single_course_progress',    50 );
 add_action( 'lifterlms_single_lesson_after_summary', 'lifterlms_template_single_lesson_content_wrapper_end', 55 );

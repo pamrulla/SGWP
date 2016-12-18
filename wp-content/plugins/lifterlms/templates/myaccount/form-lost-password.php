@@ -12,7 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 		<p><label for="user_login"><?php _e( 'Username or email', 'lifterlms' ); ?></label> 
 		<input class="input-text llms-input-text" type="text" name="user_login" id="user_login" /></p>
-
+        <?php if( function_exists( 'gglcptch_display' ) ) { echo gglcptch_display(); }; ?>
+        <br>
 	<?php else : ?>
 
 		<p><?php echo apply_filters( 'lifterlms_reset_password_message', __( 'Enter a new password below.', 'lifterlms' ) ); ?></p>
@@ -28,7 +29,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 		<input type="hidden" name="reset_key" value="<?php echo isset( $args['key'] ) ? $args['key'] : ''; ?>" />
 		<input type="hidden" name="reset_login" value="<?php echo isset( $args['login'] ) ? $args['login'] : ''; ?>" />
-
+        <?php if( function_exists( 'gglcptch_display' ) ) { echo gglcptch_display(); }; ?>
+        <br>
 	<?php endif; ?>
 
 	<div class="clear"></div>

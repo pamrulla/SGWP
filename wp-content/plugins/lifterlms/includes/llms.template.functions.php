@@ -512,6 +512,20 @@ if ( ! function_exists( 'lifterlms_template_single_prerequisites' ) ) {
 }
 
 /**
+ * Course Difficulty Template Include
+ * @return void
+ */
+if ( ! function_exists( 'lifterlms_template_course_qna_link' ) ) {
+
+    function lifterlms_template_course_qna_link() {
+
+        global $post;
+        llms_get_template( 'course/course-qna-link.php', array( 'course' => new LLMS_Course( $post ) ) );
+
+    }
+}
+
+/**
  * Course Syllabus Template Include
  * @return void
  */

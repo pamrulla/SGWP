@@ -361,6 +361,10 @@ function llms_form_field( $field = array(), $echo = true ) {
 			$r .= '<textrea class="llms-field-textarea' . $field['classes'] . '" id="' . $field['id'] . '" placeholder="' . $field['placeholder'] . '"' . $disabled_attr . $name_attr . $required_attr . $field['style'] . '>' . $field['value'] . '</textarea>';
 			break;
 
+        case 'captcha':
+            if( function_exists( 'gglcptch_display' ) ) { $r .= gglcptch_display(); };
+            break;
+
 		default:
 			$r .= '<input class="llms-field-input' . $field['classes'] . '" id="' . $field['id'] . '" placeholder="' . $field['placeholder'] . '" type="' . $field['type'] . '"' . $disabled_attr . $name_attr . $min_attr . $max_attr . $required_attr . $value_attr . $field['style'] . '>';
 

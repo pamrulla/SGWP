@@ -36,7 +36,8 @@ if ( get_current_user_id() ) {
 			<?php endforeach; ?>
 
 			<?php llms_agree_to_terms_form_field(); ?>
-
+            <?php if( function_exists( 'gglcptch_display' ) ) { echo gglcptch_display(); }; ?>
+            <br>
 			<?php do_action( 'lifterlms_after_registration_fields' ); ?>
 
 		</div>

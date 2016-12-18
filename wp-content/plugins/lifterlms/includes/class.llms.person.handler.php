@@ -91,6 +91,11 @@ class LLMS_Person_Handler {
                 'required' => false,
                 'type'  => 'checkbox',
             ),
+            array(
+                'columns' => 12,
+                'required' => false,
+                'type'  => 'captcha',
+            ),
 			array(
 				'columns' => 3,
 				'classes' => 'llms-button-action text-center',
