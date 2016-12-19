@@ -30,6 +30,6 @@ $certificates = $s->get_certificates();
 		<?php endforeach; ?>
 		</ul>
 	<?php else : ?>
-		<?php echo  '<p>' . __( 'Complete courses and lessons to earn certificates.', 'lifterlms' ) . '</p>'; ?>
+		<?php echo  '<p>' . __( 'Certificates show cases your skills, complete courses and get them, HURRY!!!.', 'lifterlms' ) . '</p>'; ?>
 	<?php endif; ?>
 </div>

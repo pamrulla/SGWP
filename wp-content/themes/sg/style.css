@@ -347,3 +347,21 @@ td, th{
 text-align: center !important;
     margin-bottom: 20px;
 }
+
+.llms-progress-circle-count {
+    top: 35%;
+}
+
+.llms-button-primary {
+    background: #ec900c;
+}
+
+.llms-my-certificates ul.listing-certificates{
+    margin: -5px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+
+.llms-my-certificates ul.listing-certificates li.certificate-item{
+padding-bottom: 0;
+}

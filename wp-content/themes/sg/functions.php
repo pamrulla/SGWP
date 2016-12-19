@@ -5,6 +5,14 @@
  * @package sg
  */
 
+
+// This theme uses wp_nav_menu() in one location.
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'sg' ),
+    'secondary' => __('Secondary Navigation', 'sg')
+) );
+
+
 /**
  * Display LifterLMS Course and Lesson sidebars
  * on courses and lessons in place of the sidebar returned by
