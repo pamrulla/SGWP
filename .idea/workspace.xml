@@ -29,7 +29,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="7220">
               <caret line="361" column="23" lean-forward="false" selection-start-line="361" selection-start-column="23" selection-end-line="361" selection-end-column="23" />
               <folding />
             </state>
@@ -39,7 +39,7 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="1020">
               <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="8" />
               <folding />
             </state>
@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -66,10 +66,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="single-course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/single-course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/content-single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="880">
               <caret line="50" column="26" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="50" selection-end-column="26" />
               <folding />
             </state>
@@ -79,7 +111,7 @@
       <file leaf-file-name="my-certificates.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/myaccount/my-certificates.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="560">
               <caret line="32" column="106" lean-forward="false" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
               <folding />
             </state>
@@ -142,9 +174,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/sydney/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sydney/content-page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sydney/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sydney/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sydney/comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sg/comments.php" />
@@ -155,7 +185,6 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/course/video.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/content-single-course-before.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/content-single-course-after.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sg/single-course.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/course/col_md_8_end.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/course/col_md_4_start.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/course/col_md_8_start.php" />
@@ -193,6 +222,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/sg/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/sg/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sg/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sg/single-course.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sg/single-membership.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sydney/single.php" />
       </list>
     </option>
   </component>
@@ -328,12 +360,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\SmartGnan\Work\WebSiteDevWP\wp-content\themes\stsg" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\SmartGnan\Work\WebSiteDevWP\wp-content\themes\sg" />
       <recent name="E:\SmartGnan\Work\WebSiteDevWP\wp-content\themes\sg\widgets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SmartGnan\Work\WebSiteDevWP\wp-content\themes\stsg" />
     </key>
   </component>
   <component name="RunManager">
@@ -415,12 +447,13 @@
       <workItem from="1481902808166" duration="4718000" />
       <workItem from="1481964719199" duration="3257000" />
       <workItem from="1482056470073" duration="10651000" />
-      <workItem from="1482166998555" duration="3197000" />
+      <workItem from="1482166998555" duration="4834000" />
+      <workItem from="1482258697954" duration="667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64040000" />
+    <option name="totallyTimeSpent" value="66344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,37 +503,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/emails/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/includes/class.llms.engagements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="408" column="0" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
-          <folding>
-            <marker date="1481036824000" expanded="true" signature="9792:10899" ph="SELECT DISTI... ${$wpdb-&gt;postmeta}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/checkout/form-confirm-payment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/loop/loop-end.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -583,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="1335" column="20" lean-forward="true" selection-start-line="1335" selection-start-column="20" selection-end-line="1335" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,11 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="111" column="67" lean-forward="true" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
-          <folding>
-            <marker date="1482063362049" expanded="true" signature="26120:26303" ph="..." />
-            <marker date="1482063362049" expanded="true" signature="26141:26278" ph="{...}" />
-            <marker date="1482063362049" expanded="true" signature="26202:26270" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,12 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="605" column="29" lean-forward="false" selection-start-line="605" selection-start-column="20" selection-end-line="605" selection-end-column="29" />
-          <folding>
-            <marker date="1481036824000" expanded="true" signature="14898:14950" ph="SELECT * FRO... ${$table_name}" />
-            <marker date="1481036824000" expanded="true" signature="15441:15540" ph="SELECT * FRO... ${$table_name}" />
-            <marker date="1481036824000" expanded="true" signature="19546:19628" ph="SELECT * FRO... ${$table_name}" />
-            <marker date="1481036824000" expanded="true" signature="20185:20267" ph="SELECT * FRO... ${$table_name}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +809,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/lifterlms/templates/myaccount/my-certificates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="560">
           <caret line="32" column="106" lean-forward="false" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
           <folding />
         </state>
@@ -837,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="7220">
           <caret line="361" column="23" lean-forward="false" selection-start-line="361" selection-start-column="23" selection-end-line="361" selection-end-column="23" />
           <folding />
         </state>
@@ -845,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="1020">
           <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="8" />
           <folding />
         </state>
@@ -861,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="880">
           <caret line="50" column="26" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="50" selection-end-column="26" />
           <folding />
         </state>
@@ -872,6 +852,40 @@
         <state relative-caret-position="400">
           <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/content-membership.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sg/single-course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/content-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sydney/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

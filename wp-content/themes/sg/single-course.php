@@ -13,6 +13,7 @@ get_header(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="entry-header text-center">
                         <?php the_title( '<h1>', '</h1>' ); ?>
+
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
