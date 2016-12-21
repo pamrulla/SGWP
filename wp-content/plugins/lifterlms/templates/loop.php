@@ -59,6 +59,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php do_action( 'lifterlms_after_main_content' ); ?>
 
-<?php do_action( 'lifterlms_sidebar' ); ?>
+<?php /*do_action( 'lifterlms_sidebar' );*/ ?>
 
 <?php get_footer(); ?>
