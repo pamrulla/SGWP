@@ -173,7 +173,7 @@ class LLMS_Course extends LLMS_Post_Model {
 
 	/**
 	 * Get course lessons
-	 * @param    string     $return  type of return [ids|posts|sections]
+	 * @param    string     $return  type of return [ids|posts|lessons]
 	 * @return   array
 	 * @since    3.0.0
 	 * @version  3.0.0
@@ -196,6 +196,24 @@ class LLMS_Course extends LLMS_Post_Model {
 			}
 		}
 		return $r;
+
+	}
+
+	public function get_quizzes() {
+
+		$quizzes = array();
+
+		foreach ( $this->get_lessons( 'lessons' ) as $l ) {
+
+			if ( $l->get( 'assigned_quiz' ) ) {
+
+				$quizzes[] = $l->get( 'id' );
+
+			}
+
+		}
+
+		return $quizzes;
 
 	}
 

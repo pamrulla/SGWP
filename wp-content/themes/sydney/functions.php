@@ -242,6 +242,23 @@ function sydney_header_overlay() {
 }
 
 /**
+ * Header video
+ */
+function sydney_header_video() {
+
+	if ( !function_exists('the_custom_header_markup') ) {
+		return;
+	}
+
+	$front_header_type 	= get_theme_mod( 'front_header_type' );
+	$site_header_type 	= get_theme_mod( 'site_header_type' );
+
+	if ( ( get_theme_mod('front_header_type') == 'core-video' && is_front_page() || get_theme_mod('site_header_type') == 'core-video' && !is_front_page() ) ) {
+		the_custom_header_markup();
+	}
+}
+
+/**
  * Polylang compatibility
  */
 if ( function_exists('pll_register_string') ) :
@@ -255,6 +272,37 @@ function sydney_polylang() {
 }
 add_action( 'admin_init', 'sydney_polylang' );
 endif;
+
+/**
+ * Preloader
+ */
+function sydney_preloader() {
+	?>
+	<div class="preloader">
+	    <div class="spinner">
+	        <div class="pre-bounce1"></div>
+	        <div class="pre-bounce2"></div>
+	    </div>
+	</div>
+	<?php
+}
+add_action('sydney_before_site', 'sydney_preloader');
+
+/**
+ * Header clone
+ */
+function sydney_header_clone() {
+
+	$front_header_type 	= get_theme_mod('front_header_type','slider');
+	$site_header_type 	=get_theme_mod('site_header_type');
+
+	if ( ( $front_header_type == 'nothing' && is_front_page() ) || ( $site_header_type == 'nothing' && !is_front_page() ) ) { ?>
+	
+	<div class="header-clone"></div>
+
+	<?php }
+}
+add_action('sydney_before_header', 'sydney_header_clone');
 
 /**
  * Implement the Custom Header feature.
@@ -311,6 +359,10 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 require get_template_directory() . '/inc/upsell/class-customize.php';
 
+/**
+ * Demo content
+ */
+require_once dirname( __FILE__ ) . '/demo-content/setup.php';
 
 /**
  *TGM Plugin activation.

@@ -46,6 +46,7 @@ add_action( 'lifterlms_single_course_after_summary', 'lifterlms_template_single_
 
 
 
+
 /***********************************************************************
  *
  * Single Lesson

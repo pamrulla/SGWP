@@ -1,0 +1,60 @@
+/*
+* Plugin css
+*/
+.gglplsn_buttons,
+.fcbk_share {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	line-height: inherit;
+	height: auto;
+}
+.gglplsn_hangout, .gglplsn_follow, .gglplsn_plus_one, .gglplsn_share,
+.fcbk_share img,
+.fcbk_like .fb_iframe_widget span {
+	vertical-align: middle !important;
+}
+.fcbk_button a {
+	height: auto;
+}
+.twttr_buttons {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	line-height: inherit;
+	height: auto;
+}
+.twttr_twitter,
+.twttr_followme,
+.twttr_hashtag,
+.twttr_mention {
+	vertical-align: middle;
+}
+body.twentyfourteen .pntrst-button-wrap,
+body.twentyfourteen .fcbk_share {
+    vertical-align: super;
+}
+body.twentyfifteen .pntrst-button-wrap,
+body.twentyfifteen .gglplsn_buttons {
+	vertical-align: top;
+}
+body.twentysixteen .lnkdn_buttons,
+body.twentysixteen .fcbk_share {
+	vertical-align: middle;
+}
+body.twentytwelve .pntrst-button-wrap,
+body.twentytwelve .lnkdn_buttons,
+body.twentytwelve .gglplsn_buttons {
+	vertical-align: middle;
+}
+body.twentytwelve .fcbk_share,
+body.twentytwelve .pntrst-button-wrap span {
+	vertical-align: top;
+}
+body.twentythirteen .fcbk_share {
+	vertical-align: super;
+}
+body.twentythirteen .pntrst-button-wrap span {
+	vertical-align: top;
+}
+body.twentythirteen .lnkdn_buttons {
+	vertical-align: middle;
+}

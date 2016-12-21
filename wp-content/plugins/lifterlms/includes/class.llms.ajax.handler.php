@@ -66,6 +66,40 @@ class LLMS_AJAX_Handler {
 	}
 
 	/**
+	 * Reload admin tables
+	 * @param    array     $request  post data ($_REQUST)
+	 * @return   array
+	 * @since    3.2.0
+	 * @version  3.2.0
+	 */
+	public static function get_admin_table_data( $request ) {
+
+		require_once 'admin/reporting/class.llms.admin.reporting.php';
+
+		$handler = 'LLMS_Table_' . $request['handler'];
+
+		LLMS_Admin_Reporting::includes();
+
+		if ( class_exists( $handler ) ) {
+
+			$table = new $handler();
+			$table->get_results( $request );
+			return array(
+				'args'  => json_encode( $table->get_args() ),
+				'thead' => trim( $table->get_thead_html() ),
+				'tbody' => trim( $table->get_tbody_html() ),
+				'tfoot' => trim( $table->get_tfoot_html() ),
+			);
+
+		} else {
+
+			return false;
+
+		}
+
+	}
+
+	/**
 	 * Remove a course from the list of membership auto enrollment courses
 	 * called from "Auto Enrollment" tab of LLMS Membership Metaboxes
 	 * @since    3.0.0
