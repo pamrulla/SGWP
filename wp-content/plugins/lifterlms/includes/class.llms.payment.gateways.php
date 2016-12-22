@@ -73,7 +73,7 @@ class LLMS_Payment_Gateways {
 	 * @version  3.0.0
 	 */
 	public function add_core_gateways( $gateways ) {
-		$gateways[] = 'LLMS_Payment_Gateway_Manual';
+		$gateways = ['LLMS_Payment_Gateway_Manual', 'LLMS_Payment_Gateway_PayUMoney'];
 		return $gateways;
 	}
 

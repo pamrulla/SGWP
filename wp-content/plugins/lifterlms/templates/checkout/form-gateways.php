@@ -14,6 +14,7 @@ if ( isset( $plan ) && $plan->is_free() ) {
 	$show_gateways = false;
 }
 
+
 // if the plan doesn't require payment due to coupon application
 if ( ! empty( $coupon ) && ! $plan->requires_payment( $coupon->get( 'id' ) ) ) {
 	$show_gateways = false;
