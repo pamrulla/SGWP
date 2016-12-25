@@ -97,6 +97,7 @@ class LLMS_Shortcode_Checkout {
 			}
 
 			$order = llms_get_order_by_key( $_GET['order'] );
+			$atts['order'] = $order;
 			$atts['plan'] = new LLMS_Access_Plan( $order->get( 'plan_id' ) );
 			$atts['product'] = $atts['plan']->get_product();
 
@@ -110,7 +111,11 @@ class LLMS_Shortcode_Checkout {
 
 			self::confirm_payment( $atts );
 
-		} else {
+		} elseif (isset($_GET['status'])) {
+			
+			self::after_payment();
+		}
+		else {
 
 			return self::error( sprintf( __( 'Your cart is currently empty. Click <a href="%s">here</a> to get started.', 'lifterlms' ), llms_get_page_url( 'courses' ) ) );
 
@@ -120,9 +125,25 @@ class LLMS_Shortcode_Checkout {
 
 	}
 
+	private static function after_payment(){
+		echo "<center>";
+		if($_GET['status'] == 1 && isset($_POST['status']) && $_POST['status'] == 'success'){
+			echo LLMS()->payment_gateways()->get_gateway_by_id('payumoney')->return_transaction(true, $_POST['txnid'], $_POST['mode'], $_POST['payuMoneyId']);	
+		}
+		else if($_GET['status'] == 0 && isset($_POST['status']) && $_POST['status'] == 'failure'){
+			echo LLMS()->payment_gateways()->get_gateway_by_id('payumoney')->return_transaction(false, $_POST['txnid'], $_POST['mode'], $_POST['payuMoneyId'], $_POST['error']);
+		}
+		else{
+			echo 'There is something wrong with transaction, please try again.';
+		}
+		echo "</center>";
 
+		$order = new LLMS_Order( $_POST['txnid'] );
+		$plan = new LLMS_Access_Plan( $order->get( 'plan_id' ) );
+		//$atts['product'] = $atts['plan']->get_product();
 
-
+		echo '<br><center><a href="'.get_post_permalink($plan->get( 'product_id' )).'" class="roll-button button-slider">Go back</a></center>';		
+	}
 
 	/**
 	* My Checkout page template
@@ -167,7 +188,12 @@ class LLMS_Shortcode_Checkout {
 	* @return void
 	*/
 	private static function confirm_payment( $atts ) {
-		llms_get_template( 'checkout/form-confirm-payment.php', $atts );
+		if($atts['selected_gateway']->id == 'payumoney'){
+			llms_get_template( 'checkout/form-confirm-payment_payumoney.php', $atts );
+		}
+		else{
+			llms_get_template( 'checkout/form-confirm-payment.php', $atts );
+		}
 	}
 
 

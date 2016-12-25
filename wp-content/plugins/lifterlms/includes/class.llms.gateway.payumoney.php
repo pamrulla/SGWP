@@ -7,6 +7,18 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 class LLMS_Payment_Gateway_PayUMoney extends LLMS_Payment_Gateway {
 
+	public $url = 'https://secure.payu.in/_payment';
+	
+	public $key = 'D77ZO7';
+
+	public $surl = '?status=1';
+
+	public $furl = '?status=0';
+
+	public $service_provider = 'payu_paisa';
+
+	public $salt = 'KezrgVWb';
+
 	/**
 	 * Constructor
 	 * @return  void
@@ -114,7 +126,7 @@ class LLMS_Payment_Gateway_PayUMoney extends LLMS_Payment_Gateway {
 	public function handle_pending_order( $order, $plan, $person, $coupon = false ) {
 
 		if ( $order->is_recurring() ) {
-			return llms_add_notice( __( 'This gateway cannot process recurring transactions', 'lifterlms' ), 'error' );
+			//return llms_add_notice( __( 'This gateway cannot process recurring transactions', 'lifterlms' ), 'error' );
 		}
 
 		// no payment (free orders)
@@ -125,12 +137,67 @@ class LLMS_Payment_Gateway_PayUMoney extends LLMS_Payment_Gateway {
 
 		} else {
 
-			do_action( 'lifterlms_handle_pending_order_complete', $order );
-			wp_redirect( $order->get_view_link() );
+			//do_action( 'lifterlms_handle_pending_order_complete', $order );
+			wp_redirect( llms_confirm_payment_url($order->order_key) );
 			exit;
 
 		}
 
+	}
+
+		/**
+	 * This should be called by the gateway after verifying the transaction was completed successfully
+	 *
+	 * @param    obj        $order   Instance of an LLMS_Order object
+	 * @param    string     $msg     optional message to display on the redirect screen
+	 * @return   void
+	 * @since    3.0.0
+	 * @version  3.0.0
+	 */
+	public function complete_transaction( $order, $msg = '', $isSuccess = false, $payuMoneyId = 0 ) {
+
+		$this->log( $this->get_admin_title() . ' `complete_transaction()` started', $order, $msg );
+
+		// filter the notice
+		$msg = apply_filters( 'lifterlms_completed_transaction_message', $msg, $order );
+
+		// ouput the notice
+		if($isSuccess){
+			llms_add_notice( $msg, 'success' );
+			$order->set( 'status', 'llms-completed');
+			$order->record_transaction(array(
+				'amount' => $order->get_initial_price(array(), 'float'),
+				'transaction_id' => $payuMoneyId,
+				'status' => 'llms-txn-succeeded'
+			));
+		}
+		else{
+			llms_add_notice( $msg, 'fail' );
+			$order->set( 'status', 'llms-failed');
+			$tx = $order->record_transaction(array(
+				'amount' => $order->get_initial_price(array(), 'float'),
+				'transaction_id' => $payuMoneyId,
+				'status' => 'llms-txn-failed'
+			));
+			$this->log( $this->get_admin_title() . ' transactopn recorded', $tx );
+		}
+		
+		$this->log( $this->get_admin_title() . ' `complete_transaction()` finished', $order, $msg );
+	}
+
+	public function return_transaction($isSuccess, $orderid, $mode, $payuMoneyId, $error){
+		$order = new LLMS_Order($orderid);
+
+		if($isSuccess){
+			$msg = sprintf( __( 'Congratulations! Your purchase was successful and you\'ve been enrolled in %s.', 'lifterlms' ), $order->get( 'product_title' ) );
+			$this->complete_transaction($order, $msg, true, $payuMoneyId);
+		}
+		else {
+			$msg = sprintf( __( 'Sorry! Your purchase was unsuccessful for %s and please try again.', 'lifterlms' ), $order->get( 'product_title' ) );
+			$this->complete_transaction($order, $msg, false, $payuMoneyId);
+		}
+
+		return $msg;
 	}
 
 	/**
