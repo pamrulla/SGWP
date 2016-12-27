@@ -15,6 +15,6 @@ if ( ! $lesson->get( 'video_embed' ) ) { return; }
 
 <div class="llms-video-wrapper">
 	<div class="center-video">
-		<?php echo '<iframe src="https://player.vimeo.com/video/' . $lesson->get_video() . '?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'; ?>
+		<?php echo '<iframe src="https://player.vimeo.com/video/' . $lesson->get_video() . '?title=0&byline=0&portrait=0" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'; ?>
 	</div>
 </div>
